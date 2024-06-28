@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scientific Calculator</title>
+  <script src="calculator.js" defer></script>
+</head>
+<body>
+  <h1>Scientific Calculator</h1>
+  <div>
+    <label for="operationType">Operation Type:</label>
+    <select id="operationType">
+      <option value="1">Add</option>
+      <option value="2">Sub</option>
+      <option value="3">Mul</option>
+      <option value="4">Div</option>
+      <option value="5">Exp</option>
+      <option value="6">Sqrt</option>
+      <option value="7">Sin</option>
+      <option value="8">Cos</option>
+      <option value="9">Tan</option>
+      <option value="10">Log10</option>
+      <option value="11">Ln</option>
+      <option value="12">ExpFunc</option>
+      <option value="13">Fact</option>
+    </select>
+  </div>
+  <div id="inputFields">
+    <label for="number1">Number 1:</label>
+    <input type="number" id="number1">
+    <br>
+    <label for="number2">Number 2:</label>
+    <input type="number" id="number2">
+  </div>
+  <button onclick="performCalculation()">Calculate</button>
+  <h2>Result: <span id="result"></span></h2>
+</body>
+</html>
